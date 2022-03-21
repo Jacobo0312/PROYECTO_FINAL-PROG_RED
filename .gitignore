@@ -8,3 +8,4 @@ input.txt
 /.settings/
 /.classpath/
 .project
+.DS_Store
