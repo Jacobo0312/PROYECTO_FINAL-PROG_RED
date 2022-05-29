@@ -23,5 +23,11 @@ public class UserService {
     public UserModel saveUserModel(UserModel userModel) {
         return userRepository.save(userModel);
     }
+
+
+    
+    public UserModel loginUserModel(UserModel userModel) {
+        return userRepository.loginUserModel(userModel.getUser(),userModel.getPassword());
+    }
     
 }

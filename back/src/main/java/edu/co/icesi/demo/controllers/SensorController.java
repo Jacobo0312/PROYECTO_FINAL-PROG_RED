@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import edu.co.icesi.demo.models.SensorModel;
 import edu.co.icesi.demo.models.UserModel;
+import edu.co.icesi.demo.services.SensorService;
 import edu.co.icesi.demo.services.UserService;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,30 +18,25 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 @RestController
-@RequestMapping("/users")
-public class UserController {
+@RequestMapping("/sensors")
+public class SensorController {
 
     @Autowired
-    UserService userService;
+    SensorService sensorService;
 
 
     @GetMapping("/all")
-    public ArrayList<UserModel> getUsers() {
-        return userService.getUsers();
+    public ArrayList<SensorModel> getSensors() {
+        return sensorService.getSensors();
     }
 
 
     @PostMapping("/register")
-    public UserModel saveUserModel(@RequestBody UserModel userModel) {
-        return userService.saveUserModel(userModel);
+    public SensorModel saveSensorModel(@RequestBody SensorModel sensorModel) {
+        return sensorService.saveSensorModel(sensorModel);
     }
 
 
-    //login
-    @PostMapping("/login")
-    public UserModel loginUserModel(@RequestBody UserModel userModel) {
-        return userService.loginUserModel(userModel);
-    }
 
 
     
