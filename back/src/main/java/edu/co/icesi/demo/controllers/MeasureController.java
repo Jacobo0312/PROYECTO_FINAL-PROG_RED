@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import edu.co.icesi.demo.models.MeasureModel;
@@ -39,5 +40,9 @@ public class MeasureController {
         return measureService.saveMeasureModel(measureModel);
     }
     
-    
+    @GetMapping("/getmeasures")
+    public ArrayList<MeasureModel> getMeasures(@RequestParam(value = "start", defaultValue = "0") long start, @RequestParam(value = "finish", defaultValue = "1000000") long finish){
+        return measureService.timeMeasures(start, finish);
+    }
+
 }

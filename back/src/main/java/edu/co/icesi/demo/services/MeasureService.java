@@ -26,6 +26,8 @@ public class MeasureService {
         return measureRepository.save(measureModel);
     }
 
- 
+    public ArrayList<MeasureModel> timeMeasures(long start, long finish){
+        return measureRepository.timeMeasures(start, finish);
+    }
     
 }

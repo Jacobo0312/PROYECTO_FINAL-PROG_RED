@@ -23,8 +23,8 @@ public class SensorController {
     SensorService sensorService;
 
     @GetMapping("/all")
-    public String getSensors() {
-        return "All";
+    public ArrayList<SensorModel> getSensors() {
+        return sensorService.getSensors();
     }
 
 

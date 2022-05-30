@@ -28,8 +28,6 @@ public class UserModel {
     @Nullable
     private SectorModel sectorId;
 
-
-
     public UserModel(){
 
     }
