@@ -11,12 +11,18 @@ public class SectorModel {
     @Id
     private String id;
 
-    public String getSector() {
+    public String getId() {
         return id;
     }
 
-    public void setSector(String id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+
+    @Override
+    public String toString() {
+        return "SectorModel [id=" + id + "]";
     }
 
     
