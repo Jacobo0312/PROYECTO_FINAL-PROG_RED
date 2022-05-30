@@ -24,10 +24,9 @@ public class SensorController {
     @Autowired
     SensorService sensorService;
 
-
     @GetMapping("/all")
-    public ArrayList<SensorModel> getSensors() {
-        return sensorService.getSensors();
+    public String getSensors() {
+        return "All";
     }
 
 
