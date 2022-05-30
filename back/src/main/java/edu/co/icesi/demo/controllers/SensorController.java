@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import edu.co.icesi.demo.models.SensorModel;
@@ -29,7 +30,7 @@ public class SensorController {
     }
 
 
-    @PostMapping("/register")
+    @RequestMapping(value = "/register", method = RequestMethod.POST, consumes = "application/json")
     public SensorModel saveSensorModel(@RequestBody SensorModel sensorModel) {
         return sensorService.saveSensorModel(sensorModel);
     }

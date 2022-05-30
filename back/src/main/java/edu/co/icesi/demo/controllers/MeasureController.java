@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,7 +36,7 @@ public class MeasureController {
     }
 
 
-    @PostMapping("/add")
+    @RequestMapping(value = "/add", method = RequestMethod.POST, consumes = "application/json")
     public MeasureModel saveMeasureModel(@RequestBody MeasureModel measureModel) {
         return measureService.saveMeasureModel(measureModel);
     }

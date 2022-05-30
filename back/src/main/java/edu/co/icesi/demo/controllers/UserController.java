@@ -31,14 +31,14 @@ public class UserController {
     }
 
 
-    @PostMapping("/register")
+    @RequestMapping(value = "/register", method = RequestMethod.POST, consumes = "application/json")
     public UserModel saveUserModel(@RequestBody UserModel userModel) {
         return userService.saveUserModel(userModel);
     }
 
 
     //login
-    @RequestMapping(value = "/login",method = RequestMethod.POST,consumes = "application/json")
+    @RequestMapping(value = "/login", method = RequestMethod.POST, consumes = "application/json")
       public UserModel loginUserModel(@RequestBody UserModel userModel) {
         return userService.loginUserModel(userModel);
     }
