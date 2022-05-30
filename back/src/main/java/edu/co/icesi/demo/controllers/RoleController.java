@@ -8,10 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.co.icesi.demo.models.RoleModel;
 import edu.co.icesi.demo.services.RoleService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/roles")
 public class RoleController {

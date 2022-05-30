@@ -13,14 +13,14 @@ import edu.co.icesi.demo.models.MeasureModel;
 
 import edu.co.icesi.demo.services.MeasureService;
 
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 
 
-
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/measures")
 public class MeasureController {
