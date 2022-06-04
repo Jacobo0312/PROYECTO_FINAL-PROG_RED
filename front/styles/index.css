@@ -68,3 +68,56 @@
 
 
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.list-group-light
+{
+  background-color: #6EB83D;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.list-group-item{
+  width:max-content;
+  background-color: #107568;
+  color: #FFF;
+}
+
+.list-group-item:hover{
+  background-color: #0F1922;
+  color: #FFF;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+
+  
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+
+  
+  .card-registration .select-arrow {
+  top: 13px;
+  }
+
+
+
+
+
+
+
+
+
+
