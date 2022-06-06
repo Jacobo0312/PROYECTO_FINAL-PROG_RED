@@ -27,89 +27,84 @@
     </div>
   </nav>
 
-  <section class="vh-100 gradient-custom-2">
+  <section class="vh-200 gradient-custom-2">
     <div class="container py-5 h-100">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-12 col-lg-9 col-xl-7">
           <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
             <div class="card-body p-4 p-md-5">
-              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registrar personal</h3>
               <form>
-  
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-  
-                    <div class="form-outline">
-                        <label class="form-label" for="firstName">Nombre</label>
-                      <input type="text" id="firstName" class="form-control form-control-lg" />
-                    </div>
-  
-                  </div>
-                  <div class="col-md-6 mb-4">
-  
-                    <div class="form-outline">
-                        <label class="form-label" for="lastName">Apellido</label>
-                      <input type="text" id="lastName" class="form-control form-control-lg" />
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-    
-                        <div class="form-outline">
-                            <label class="form-label" for="email">ID</label>
-                        <input type="text" id="email" class="form-control form-control-lg" />
-                        </div>
-    
-                    </div>
-                    <div class="col-md-6 mb-4">
-    
-                        <div class="form-outline">
-                            <label class="form-label" for="phone">CONTRASEÑA</label>
-                        <input type="password" id="phone" class="form-control form-control-lg" />
-                        </div>
-    
-                    </div>
-                </div>
-  
-                <div class="row">
-                  <div class="col-md-6 mb-4 pb-2">
-  
-                    <div class="form-outline">
-                        <label class="form-label" for="emailAddress">CONTRASEÑA</label>
-                      <input type="password" id="emailAddress" class="form-control form-control-lg" />
-                    </div>
-  
-                  </div>
-                  <div class="col-md-6 mb-4 pb-2">
-  
-                    <div class="form-outline">
-                        <label class="form-label" for="phoneNumber">Phone Number</label>
-                      <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="row">
-                    <label class="form-label select-label">Choose option</label>
 
-                  <div class="col-12">
-                    <select class="select form-control-lg">
-                      <option value="1" disabled>Choose option</option>
-                      <option value="2">INGENIERO</option>
-                      <option value="3">TECNICO</option>
-                    </select>
-  
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+
+                    <div class="form-outline">
+                      <label class="form-label" for="firstName">Nombre</label>
+                      <input type="text" id="name" class="form-control form-control-lg" />
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 mb-4">
+
+                    <div class="form-outline">
+                      <label class="form-label" for="lastName">Usuario</label>
+                      <input type="text" id="user" class="form-control form-control-lg" />
+                    </div>
+
                   </div>
                 </div>
-  
-                <div class="mt-4 pt-2">
-                  <input class="btn btn-default" type="submit" value="Submit" />
+
+                <div class="row">
+                  <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                    <div class="form-outline datepicker w-100">
+                      <label for="id" class="form-label">ID</label>
+                      <input type="number" class="form-control form-control-lg" id="natID" />
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 mb-4">
+
+
+                    <div class="form-outline datepicker w-100">
+                      <label for="id" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control form-control-lg" id="pass" />
+                    </div>
+
+                  </div>
                 </div>
-  
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label select-label">Rol</label>
+                    <div class="col-12">
+
+                      <select id="rol" class="select form-control-lg">
+                        <option value="1" disabled>Selecciona una opción</option>
+                        <option value="3">Tecnico</option>
+                        <option value="2">Ingeniero</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label select-label">Sector</label>
+                    <div class="col-12">
+
+                      <select id="sectorSelect" class="select form-control-lg">
+                        <option value="1" disabled>Selecciona una opción</option>
+                      </select>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 pt-2">
+                  <input id="send" class="btn btn-default btn-lg" type="submit" value="ENVIAR" />
+                </div>
+
               </form>
             </div>
           </div>
@@ -123,4 +118,4 @@
 </html>
 
 
-<script src="functions/Menu_admin.js"></script>
+<script src="functions/Register.js"></script>
