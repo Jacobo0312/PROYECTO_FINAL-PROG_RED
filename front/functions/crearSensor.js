@@ -6,15 +6,14 @@ document.getElementById('buttonCreate').onclick = function(){createSensor()};
 const getData = async()=>{
 
 
-    let url = `http://localhost:8080/Parcial2Api/api/sensors/all`;
+    let url = `http://localhost:8080/sensors/all`;
     let response = await fetch(url, {method:'GET'} );
     let obj = await response.json();
-    console.log(obj);
     for(let  i in obj){
-
-        let option = new Option(obj[i].id,obj[i].id); 
-        optionList.add(option);
-
+        let option=document.createElement('option');
+        option.value=obj[i].id;
+        option.innerHTML=obj[i].id;
+        optionList.appendChild(option);
     }
 
    
@@ -25,6 +24,7 @@ function returnPage() {
    
     window.location.href = "menu_tec.html";
 }
+
 function createSensor() {
    
     //window.location.href = "menu_tec.html";
