@@ -1,4 +1,7 @@
 let optionList = document.getElementById('sectorSelect');
+document.getElementById('buttonCancel').onclick = function(){returnPage()};
+document.getElementById('buttonCreate').onclick = function(){createSensor()};
+
 
 const getData = async()=>{
 
@@ -16,7 +19,18 @@ const getData = async()=>{
 
    
 
-    return names;
-
 }
+
+function returnPage() {
+   
+    window.location.href = "menu_tec.html";
+}
+function createSensor() {
+   
+    //window.location.href = "menu_tec.html";
+}
+
+
+
+getData();
 
