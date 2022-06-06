@@ -41,15 +41,15 @@
 
                     <div class="form-outline">
                       <label class="form-label" for="firstName">Nombre</label>
-                      <input type="text" id="firstName" class="form-control form-control-lg" />
+                      <input type="text" id="name" class="form-control form-control-lg" />
                     </div>
 
                   </div>
                   <div class="col-md-6 mb-4">
 
                     <div class="form-outline">
-                      <label class="form-label" for="lastName">Apellido</label>
-                      <input type="text" id="lastName" class="form-control form-control-lg" />
+                      <label class="form-label" for="lastName">Usuario</label>
+                      <input type="text" id="user" class="form-control form-control-lg" />
                     </div>
 
                   </div>
@@ -80,10 +80,10 @@
                     <label class="form-label select-label">Rol</label>
                     <div class="col-12">
 
-                      <select class="select form-control-lg">
+                      <select id="rol" class="select form-control-lg">
                         <option value="1" disabled>Selecciona una opción</option>
                         <option value="3">Tecnico</option>
-                        <option value="4">Ingeniero</option>
+                        <option value="2">Ingeniero</option>
                       </select>
 
                     </div>
@@ -93,11 +93,8 @@
                     <label class="form-label select-label">Sector</label>
                     <div class="col-12">
 
-                      <select class="select form-control-lg">
+                      <select id="sectorSelect" class="select form-control-lg">
                         <option value="1" disabled>Selecciona una opción</option>
-                        <option value="2">Subject 1</option>
-                        <option value="3">Subject 2</option>
-                        <option value="4">Subject 3</option>
                       </select>
 
                     </div>
@@ -105,7 +102,7 @@
                 </div>
 
                 <div class="mt-4 pt-2">
-                  <input class="btn btn-default btn-lg" type="submit" value="ENVIAR" />
+                  <input id="send" class="btn btn-default btn-lg" type="submit" value="ENVIAR" />
                 </div>
 
               </form>
