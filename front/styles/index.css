@@ -1,0 +1,209 @@
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #6EB83D
+  ;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #6EB83D
+  , #107568
+  , #0F1922);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #6EB83D
+  , #107568
+  , #0F1922);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+
+
+
+  .btn-default
+   
+  {
+   
+  background-color:  #6EB83D;
+  border-radius: 12px;
+  color:#FFF;
+   
+   
+  }
+
+
+  .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+ 
+ 
+ 
+    background-color: #107568;
+     
+    color:#FFF;
+     
+     
+  }
+
+
+/* Arrange buttons */
+.btn-matrix {
+  text-align: center;
+  margin-top: 10%;
+
+}
+.btn-matrix > .btn {
+  margin: 40px;
+  width: 40%;
+  height: 100px;
+}
+
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.list-group-light
+{
+  background-color: #6EB83D;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.list-group-item{
+  width:max-content;
+  background-color: #107568;
+  color: #FFF;
+}
+
+.list-group-item:hover{
+  background-color: #0F1922;
+  color: #FFF;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+
+  
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+
+  
+  .card-registration .select-arrow {
+  top: 13px;
+  }
+
+#sensorRegistrer{
+
+  position: static;
+  align-self: center;
+  margin: 100px;
+  margin-right: 40px;
+}
+#crearSensoresTitle{
+
+  color: #FFF;
+  position: static;
+  text-align:  center;
+  margin-left: -25%;
+}
+#sectorSelect{
+
+position: static;
+margin-top: 50px;
+padding: 0%;
+
+}
+
+
+.form-control
+   
+  {
+   
+  background-color:  #6EB83D;
+  border-radius: 12px;
+  color:#FFF;
+  height: 50px;
+  width: 25%;
+
+   
+   
+}
+
+.form-control:hover, .form-control:focus, .form-control:active, .form-control.active, .open .dropdown-toggle.btn-default {
+ 
+ 
+ 
+  background-color: #6EB83D;
+   
+  
+   
+   
+}
+.inline-block-child {
+  display: inline-block;
+  margin-right: 300px;
+
+}
+
+.left{
+
+  position: static;
+
+  border: 3px solid #73AD21;
+  padding: 5px;
+  
+}
+
+.right{
+
+  position: static;
+  
+  border: 3px solid #73AD21;
+  padding: 5px;
+}
+
+.sensor-matrix{
+
+  /*text-align: Center;*/
+  margin-top: 5%;
+  background-color: #107568; 
+
+}
+.btn-matrix-sensor {
+  text-align: center;
+  margin-right: -25%;
+}
+.btn-matrix-sensor > .btn {
+  margin: 40px;
+  width: 10%;
+  height: 50px;
+}
+
+
+
+
+
+
+
+
+

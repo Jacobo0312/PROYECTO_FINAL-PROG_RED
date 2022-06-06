@@ -17,7 +17,6 @@ public class RoleService {
 
 
     public ArrayList<RoleModel> getRoles() {
-    
         return (ArrayList<RoleModel>)roleRepository.findAll();
     }
 

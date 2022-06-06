@@ -20,7 +20,9 @@ public class SectorService {
     }
 
 
-    public SectorModel saveRoleModel(SectorModel sectorModel) {
+
+
+    public SectorModel saveSectorModel(SectorModel sectorModel) {
         return sectorRepository.save(sectorModel);
     }
     
