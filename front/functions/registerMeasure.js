@@ -39,24 +39,18 @@ class registerMeasure {
 
         console.log(hour);
 
-        var measureVAR = {
-            time : hour,
-            measure:  value,
-            sensor_id: this.sensor.id
-        }
-        /*
-        let config = {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type' : 'application/json'
-            },
-            body: JSON.stringify(measureVAR)
+        let sensor={
+            id: this.sensor.id
         }
 
-        const res = fetch('/measures/add', config);
-       ;
-        */
+
+        let measureVAR = {
+            time : hour,
+            measure:  parseInt(value),
+            sensor: sensor
+        }
+
+    
        let json = JSON.stringify(measureVAR);
        console.log(json);
        let xhr = new XMLHttpRequest();

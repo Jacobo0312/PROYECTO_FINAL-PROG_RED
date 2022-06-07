@@ -2,6 +2,17 @@ document.getElementById('calculate').onclick = function(){calculate()};
 document.getElementById('addTechn').onclick = function(){addTechn()};
 document.getElementById('Dashboard').onclick = function(){Dashboard()};
 
+const init = () => {
+    labelUser.innerHTML = "ERROR";
+    let json=localStorage.getItem('user');
+    let user = JSON.parse(json);
+    if(user!=null){
+    labelUser.innerHTML = "INGENIERO: "+ +user.user+"Sector: "+user.sectorId.id
+    }
+}
+
+init();
+
 
 function calculate() {
    
