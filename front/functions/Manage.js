@@ -7,7 +7,7 @@ const close=document.getElementById("close");
 const getData = async()=>{
 
 
-    let url = `http://proyectofinal-prog.herokuapp.com/sectors/all`;
+    let url = `https://proyectofinal-prog.herokuapp.com/sectors/all`;
     let response = await fetch(url, {method:'GET'} );
     let obj = await response.json();
     for(let  i in obj){
@@ -21,7 +21,7 @@ const getData = async()=>{
     }
 
 
-     url=`http://proyectofinal-prog.herokuapp.com/users/all`;
+     url=`https://proyectofinal-prog.herokuapp.com/users/all`;
      response = await fetch(url, {method:'GET'} );
         obj = await response.json();
         for(let  i in obj){

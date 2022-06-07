@@ -2,7 +2,7 @@ const select = document.getElementById('selectTec')
 const submit = document.getElementById('submitForm')
 
 const getData = async () =>{
-    const url = 'http://proyectofinal-prog.herokuapp.com/users/all'
+    const url = 'https://proyectofinal-prog.herokuapp.com/users/all'
     const res = await fetch(url,{method:'GET'})
     const data = await res.json()
     return data
@@ -28,7 +28,7 @@ const onClick = (event) =>{
         data.forEach(async user => {
             if(user.id == select.options[select.selectedIndex].value){
                 user.sectorId = storage.sectorId
-                const query = await fetch('http://proyectofinal-prog.herokuapp.com/users/modify', {method:'POST',body:JSON.stringify(user),headers:{'Content-Type':'application/json'}})
+                const query = await fetch('https://proyectofinal-prog.herokuapp.com/users/modify', {method:'POST',body:JSON.stringify(user),headers:{'Content-Type':'application/json'}})
                 const res = await query.json()
                 console.log(res)
             }
