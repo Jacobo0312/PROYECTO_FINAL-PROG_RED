@@ -43,7 +43,10 @@ public class UserController {
         return userService.loginUserModel(userModel);
     }
 
-
+    @RequestMapping(value = "/modify", method = RequestMethod.POST, consumes = "application/json")
+    public UserModel changeInfo(@RequestBody UserModel userModel) {
+        return userService.saveUserModel(userModel);
+    }
     
     
 }

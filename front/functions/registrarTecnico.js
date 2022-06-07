@@ -19,9 +19,22 @@ async function fillSelector(){
 
 fillSelector()
 
-const onClick = () =>{
-    
-    alert(select.options[select.selectedIndex].value)
+const onClick = (event) =>{
+    event.preventDefault()
+    const fun = async () =>{
+        const data = await getData()
+        let json=localStorage.getItem('user');
+        let storage = JSON.parse(json);
+        data.forEach(async user => {
+            if(user.id == select.options[select.selectedIndex].value){
+                user.sectorId = storage.sectorId
+                const query = await fetch('http://localhost:8080/users/modify', {method:'POST',body:JSON.stringify(user),headers:{'Content-Type':'application/json'}})
+                const res = await query.json()
+                console.log(res)
+            }
+        });
+    }
+    fun()
 }
 
 submit.addEventListener('click', onClick)
