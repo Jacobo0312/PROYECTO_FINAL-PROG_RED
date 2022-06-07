@@ -30,6 +30,7 @@ const signIn = () => {
         }
         )
         .catch(error => {
+            console.log(error)
             alert("Usuario o contraseña incorrectos");
         });
 
