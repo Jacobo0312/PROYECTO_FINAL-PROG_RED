@@ -91,7 +91,6 @@
 }
 
 .list-group-item{
-  width:max-content;
   background-color: #107568;
   color: #FFF;
 }
@@ -99,8 +98,7 @@
 .list-group-item:hover{
   background-color: #0F1922;
   color: #FFF;
-  margin: 0px;
-  padding: 0px;
+ 
   
 }
 
