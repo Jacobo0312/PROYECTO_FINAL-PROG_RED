@@ -33,31 +33,41 @@ class registerMeasure {
     action(event){
         event.preventDefault();
 
-        let value = document.getElementById('valueSensor');
+        let value = document.getElementById('valueSensor').value;
         //let unit = document.getElementById('unitSensor');
         var hour = Date.now();
 
         console.log(hour);
 
-        measure = {
-            "time" : hour,
-            "measure":  value,
-            "sensor_id": this.sensor.id
+        var measureVAR = {
+            time : hour,
+            measure:  value,
+            sensor_id: this.sensor.id
         }
-
+        /*
         let config = {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type' : 'application/json'
             },
-            body: JSON.stringify(measure)
+            body: JSON.stringify(measureVAR)
         }
 
-        const res = fetch('/sensors/add', config);
-        const data = res.json();
+        const res = fetch('/measures/add', config);
+       ;
+        */
+       let json = JSON.stringify(measureVAR);
+       console.log(json);
+       let xhr = new XMLHttpRequest();
 
+       xhr.open('POST','http://localhost:8080/measures/add');
+       xhr.setRequestHeader('Content-Type','application/json');
+       xhr.send(json);
 
+       window.alert('Medicion Registrada');
+
+       window.location.href = "menu_tec.html";
     }
 
 }
