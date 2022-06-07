@@ -12,3 +12,56 @@
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.container{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.container > div{
+  width: 50%;
+}
+
+.card{
+  background-color: #EEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary{
+  background-color:#6EB83D;
+  width: 160px;
+  height: 40px;
+  margin-block-end: 10%;
+  font-family: cursive;
+}
+
+.valueSensor{
+  width: 120px;
+  height: 35px;
+}
+
+.card-answer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+
+.card-title{
+  font-family: cursive;
+  color: #107568;
+}
+
+.card-subtitle{
+  font-family: cursive;
+  font-size: large;
+}
+
+
+
+

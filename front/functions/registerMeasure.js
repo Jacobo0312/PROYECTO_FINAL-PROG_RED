@@ -5,6 +5,7 @@ class registerMeasure {
     }
 
     render(container) {
+
         let html = `
         <div class="card" style="width: 18rem; ">
             <div class ="card-body">
