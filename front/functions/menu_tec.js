@@ -4,16 +4,17 @@ document.getElementById('register').onclick = function(){registerData()};
 
 
 function reportsMethod() {
-   
-    window.location.href = "registerMeasurements.html";
+    window.location.href = "reports.html";
+
 }
 function addSensorMethod() {
 
-    window.location.href = "reports.html";
+    window.location.href = "crearsensor.html";
 
 }
 function registerData() {
     
-    window.location.href = "crearsensor.html";
+    window.location.href = "registerMeasurements.html";
+
 
 }
