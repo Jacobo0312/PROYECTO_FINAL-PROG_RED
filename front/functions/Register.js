@@ -26,7 +26,7 @@ init();
 const getData = async()=>{
 
 
-    let url = `http://localhost:8080/sectors/all`;
+    let url = `http://proyectofinal-prog.herokuapp.com/sectors/all`;
     let response = await fetch(url, {method:'GET'} );
     let obj = await response.json();
     for(let  i in obj){

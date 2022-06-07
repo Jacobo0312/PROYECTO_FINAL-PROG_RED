@@ -7,7 +7,7 @@ let sensorID = document.getElementById('sensorID');
 const getData = async()=>{
 
 
-    let url = `http://localhost:8080/sectors/all`;
+    let url = `http://proyectofinal-prog.herokuapp.com/sectors/all`;
     let response = await fetch(url, {method:'GET'} );
     let obj = await response.json();
     for(let  i in obj){
@@ -67,7 +67,7 @@ function createSensor() {
         //{"id":"0312","type":"Sector 1","scale":"PH","sector_id":{"id":"Sector 1"}}
         let xhr = new XMLHttpRequest();
 
-        xhr.open('POST','http://localhost:8080/sensors/register');
+        xhr.open('POST','http://proyectofinal-prog.herokuapp.com/sensors/register');
         xhr.setRequestHeader('Content-Type','application/json');
         xhr.send(json);
 

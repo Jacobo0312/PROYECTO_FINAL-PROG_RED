@@ -24,7 +24,7 @@ function createSector() {
     let json = JSON.stringify(sector);
     console.log(json);
     let xhr = new XMLHttpRequest();
-    xhr.open('POST','http://localhost:8080/sectors/add');
+    xhr.open('POST','http://proyectofinal-prog.herokuapp.com/sectors/add');
     xhr.setRequestHeader('Content-Type','application/json');
     xhr.send(json);
 

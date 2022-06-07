@@ -2,7 +2,7 @@ const sensorsContainer = document.getElementById('sensorsContainer');
 
 const getSensorAPI = async() => {
 
-    let url = `http://localhost:8080/sensors/all`;
+    let url = `http://proyectofinal-prog.herokuapp.com/sensors/all`;
     let response = await fetch(url, {method:'GET'} );
     let obj = await response.json();
     for(let  i in obj){

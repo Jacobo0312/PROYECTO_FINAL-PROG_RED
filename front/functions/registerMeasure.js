@@ -55,7 +55,7 @@ class registerMeasure {
        console.log(json);
        let xhr = new XMLHttpRequest();
 
-       xhr.open('POST','http://localhost:8080/measures/add');
+       xhr.open('POST','http://proyectofinal-prog.herokuapp.com/measures/add');
        xhr.setRequestHeader('Content-Type','application/json');
        xhr.send(json);
 

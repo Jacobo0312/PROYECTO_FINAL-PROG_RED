@@ -10,7 +10,7 @@ const signIn = () => {
     let user = new User(inputUser.value, inputPassword.value);
 
 
-    let url = "http://localhost:8080/users/login";
+    let url = "http://proyectofinal-prog.herokuapp.com/users/login";
     fetch(url, { method: 'POST', body: user.serialize(), headers: { 'Content-Type': 'application/json' } })
         .then(response => response.json())
         .then(data => {
