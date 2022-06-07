@@ -5,7 +5,6 @@ const register_sector=document.getElementById('register_sector');
 const register_sensor=document.getElementById('register_sensor');
 const manage=document.getElementById('manage');
 
-
 const init = () => {
     labelUser.innerHTML = "ERROR";
     let json=localStorage.getItem('user');
